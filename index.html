@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link rel="shortcut icon" href="img/car.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+      .list-group {
+        position: sticky;
+        top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOREM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hakkimizda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Urunler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Iletisim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" id="info">
+     <div class="row bg-dark text-light p-3 align-item-center">
+       <div class="col-sm-4">
+        <div id="companyInfo" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#companyInfo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#companyInfo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#companyInfo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner ">
+            <div class="carousel-item active my-5">
+              <h2>Firmamizin Vizyonu</h2>
+              <p>Sektorunde; Oncu, yenilikci ve kaliteli hizmetler ile calisanlarina deger veren yaratici hizmet saglayan ornek bir sirket olmaktir.</p>
+              <p>Müsterilerin beklentilerini karsilayan hizmet kalitesini yüksekte tutarak örnek alinan bir sirket olmayi hedeflemektedir.</p>        
+            </div>
+            <div class="carousel-item my-5">
+              <h2>Firmamizin Misyonu</h2>
+              <p>Sektorunde; kaliteli ve zamaninda hizmeti ile adi anilan bir firma olarak %100 musteri memnuniyeti saglamak.</p>
+
+              <p>Verimli calisan, maliyetleri asgari duzeye indirerek musterilerinin menfaatini dusunerek tecrubeli calisanlari ile hizli ve rekabetci avantajlar sunmak.</p>
+            </div>
+            <div class="carousel-item my-5">
+              <h2>Uretim Politikasi</h2>
+              <p>Sektorumuzun tasarim degerlerine saygili ve marka koleksiyonlarimizin tasarim ozelliklerini destekleyen calisan bilinci ve uretim tesisleri ile orgutlenmek.</p>
+
+              <p>Uluslararasi standartlarda, kullanisli, zarif, modern ve kaliteli urunler uretmek.</p>
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="col-sm-8">
+        <div id="companyImages" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#companyImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#companyImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#companyImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#companyImages" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://picsum.photos/id/1070/1200/450" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/id/1071/1200/450" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/id/1072/1200/450" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/id/892/1200/450" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#companyImages" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#companyImages" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </div>
+    </div>
+
+    <div class="container" id="hero">
+      <div class="row justify-content-center text-center bg-light rounded my-5 p-3 border shadow">
+        <div class="col-sm-9">
+          <h1 class="display-5">LOREM Zamana Deger Katar</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, asperiores.</p>
+          <p class="lead">Dolorem tenetur praesentium magni, non ad animi eveniet perspiciatis consectetur.</p>
+          <p class="lead">Ducimus esse sed quo illum dolore reiciendis iure earum nam?</p>
+        </div>
+      </div>
+      
+      <div class="row" id="products">
+        <div class="col-sm-6">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://picsum.photos/id/514/400/500" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Product 1</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellendus necessitatibus, rerum maiores exercitationem quasi. Error voluptas maiores veritatis tenetur iste expedita deserunt et repudiandae numquam illum, cumque, consequuntur reiciendis.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  <a href="#" class="btn btn-outline-primary">Incele</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="https://picsum.photos/id/757/300/175" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="#" class="btn btn-primary">Incele</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="https://picsum.photos/id/655/300/175" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="#" class="btn btn-primary">Incele</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <aside class="col-sm-3">
+          <div class="list-group shadow">
+            <a href="#info" class="list-group-item list-group-item-action">Bilgiler</a>
+            <a href="#products" class="list-group-item list-group-item-action">Urunler</a>
+            <a href="#article" class="list-group-item list-group-item-action">Makaleler</a>
+            <a href="#images" class="list-group-item list-group-item-action">Gorseller</a>
+          </div>
+        </aside>
+
+        <section class="col-sm-9" id="article">
+          <article class="card p-3 mb-3 shadow-sm">
+            <img src="https://picsum.photos/id/579/600/250" class="img-thumbnail w-100" alt="">
+            <h2>Makale 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil commodi illum veniam voluptates saepe distinctio mollitia perspiciatis quaerat a incidunt?</p>
+            <p>Deleniti ut maxime, doloribus laudantium dolorem eos adipisci pariatur id ipsa quasi obcaecati rem error totam eligendi nobis quo voluptates!</p>
+            <p>Voluptatem, sed modi sit iusto soluta nostrum perferendis iste commodi delectus quo reprehenderit rem deserunt cupiditate debitis tempora. Nostrum, et.</p>
+          </article>
+          <article class="card p-3 mb-3 shadow-sm">
+            <img src="https://picsum.photos/id/551/600/250" class="img-thumbnail w-100" alt="">
+            <h2>Makale 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt sit in amet facere quibusdam necessitatibus vero deserunt atque nostrum voluptas?</p>
+            <p>Voluptas aliquam eaque dolor at cupiditate reiciendis earum necessitatibus cumque inventore ipsum reprehenderit nihil nostrum minima repellat debitis, eum laboriosam.</p>
+            <p>Consectetur ipsam ducimus dolorem. Optio reprehenderit vero praesentium accusamus, nostrum eligendi repellat suscipit dignissimos tempora aliquid nulla soluta voluptate in.</p>
+          </article>
+          <article class="card p-3 mb-3 shadow-sm">
+            <img src="https://picsum.photos/id/555/600/250" class="img-thumbnail w-100" alt="">
+            <h2>Makale 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, esse. Corrupti doloremque magnam culpa, omnis atque ratione dicta repellat quam!</p>
+            <p>Quo porro, iure necessitatibus nulla architecto iste ab perspiciatis cum ratione? Sapiente impedit placeat cum deserunt, suscipit maiores exercitationem provident.</p>
+            <p>Eaque reprehenderit inventore eos, mollitia officia deserunt ad facilis fuga laboriosam veniam alias, maiores architecto ex exercitationem quasi molestiae doloremque.</p>
+          </article>
+          <article class="card p-3 mb-3 shadow-sm">
+            <img src="https://picsum.photos/id/605/600/250" class="img-thumbnail w-100" alt="">
+            <h2>Makale 4</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus omnis cum ea possimus dicta accusamus optio cupiditate placeat sequi vitae.</p>
+            <p>Quas fuga omnis consequuntur hic tempore veniam eveniet ex non eius doloremque aut delectus numquam dicta expedita, distinctio libero quisquam.</p>
+            <p>Debitis perferendis libero obcaecati voluptas! Placeat expedita nulla, ipsum autem, vero quae accusamus eos totam deleniti hic, consectetur quas nam.</p>
+          </article>
+          <article class="card p-3 mb-3 shadow-sm">
+            <img src="https://picsum.photos/id/382/600/250" class="img-thumbnail w-100" alt="">
+            <h2>Makale 5</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem expedita reprehenderit, placeat beatae vel voluptatum voluptas id soluta quod veniam.</p>
+            <p>Consectetur iure suscipit, distinctio iusto amet veritatis quis, obcaecati sapiente eius repellendus esse. Sunt explicabo excepturi perspiciatis eaque, sapiente sequi.</p>
+            <p>Dolor eum architecto iste maiores provident mollitia quidem nihil! Odio totam nulla voluptas! Eaque molestias ullam at quas ipsam culpa.</p>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <div class="container my-5" id="images">
+      <div class="row">
+        <div class="col"><img src="https://picsum.photos/id/183/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/133/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/111/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/88/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/892/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/551/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/1072/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/757/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/382/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/555/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/655/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/1071/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/579/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/514/300/250" alt="" class="img-thumbnail w-100"></div>
+        <div class="col"><img src="https://picsum.photos/id/1070/300/250" alt="" class="img-thumbnail w-100"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <i class="bi bi-car-front-fill"></i>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Lorem, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
